@@ -1,0 +1,64 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #6c5ce7;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+nav {
+    background-color: #004aad;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #74b9ff;
+    display: flex;
+    justify-content: center;
+}
+.galeri-gambar {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 15px;
+}
+
+nav  li {
+    margin: 0 15px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+padding: 10px;
+display: block;
+}
+
+nav a:hover {
+    background-color: #003080;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #dfe6e9;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #00cec9;
+    color: white;
+    padding: 10px 0;
+}
+
