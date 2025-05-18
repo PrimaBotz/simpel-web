@@ -19,6 +19,7 @@
             <li><a href="#tentang">Tentang Desa</a></li>
             <li><a href="#galeri">Galeri</a></li>
             <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#daftar">Daftar</a><li>
         </ul>
     </nav>
     <section id="tentang">
@@ -37,9 +38,43 @@
         <p>Nomor telepon: <a href="https://wa.me/6289519701024" target="_blank">6289519701024</a> Ini nomor Onwer</p>
         <p>Email Owner: <a href="mailto:primanandakadek@gmail.com">primanandakadek@gmail.com</a></p>
     </section>
+    <section id="daftar">
+        <div class="container">
+    <form class="form-box" action="/beranda" method="POST">
+      <h2>Daftar Akun</h2>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="confirm">Konfirmasi Password</label>
+      <input type="password" id="confirm" name="confirm" required />
+
+      <button type="submit">Daftar</button>
+      <p class="login-link">Sudah punya akun? <a href="/login">Masuk</a></p>
+    </form>
+  </div>
+    </section>
     <footer>
         <p>&copy; 2025 Desa Kita</p>
     </footer>
     </div>
+    <script>
+document.querySelector('.form-box').addEventListener('submit', function(e) {
+  const password = document.getElementById('password').value;
+  const confirm = document.getElementById('confirm').value;
+
+  if (password !== confirm) {
+    e.preventDefault();
+    alert('Password dan Konfirmasi Password tidak cocok!');
+  }
+});
+</script>
+
 </body>
 </html>
