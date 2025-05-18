@@ -1,80 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desa Kita</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desa Penglipuran</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="ALAM">
-    <header>
-        <h1>Selamat Datang di Desa Penglipuran</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#tentang">Tentang Desa</a></li>
-            <li><a href="#galeri">Galeri</a></li>
-            <li><a href="#kontak">Kontak</a></li>
-            <li><a href="#daftar">Daftar</a><li>
-        </ul>
-    </nav>
+  <header>
+    <h1>Selamat Datang di Desa Penglipuran</h1>
+    <p>Wisata Budaya & Alam Bali</p>
+  </header>
+
+  <main>
     <section id="tentang">
-        <h2>Tentang Desa</h2>
-        <p>Penglipuran adalah salah satu desa adat dari Kabupaten Bangli, Provinsi Bali, Indonesia. Desa ini terkenal sebagai salah satu destinasi wisata di Bali karena masyarakatnya yang masih menjalankan dan melestarikan budaya tradisional Bali dalam kehidupan mereka sehari-hari. Arsitektur bangunan dan pengolahan lahan masih mengikuti konsep Tri Hita Karana, filosofi masyarakat Bali mengenai keseimbangan hubungan antara Tuhan, manusia, dan lingkungannya.<br>Total area dari desa ini mencapai 112 hektar dengan ketinggian 500-600 meter di atas permukaan laut dan berlokasi sekitar 5 kilometer dari kota Bangli atau 45 kilometer dari Kota Denpasar. Desa ini dikelilingi oleh desa adat lainnya, seperti Desa Kayang di utara, Desa Kubu di timur, Desa Gunaksa di selatan, dan Desa Cekeng. Temperatur bervariasi dari sejuk sampai dingin (16-29 °C) dan curah hujan rata-rata 2000 mm pertahun. Permukaan tanah termasuk rendah dengan ketinggian 1-15 meter</p>
+      <h2>Tentang Desa Penglipuran</h2>
+      <p>Desa Penglipuran terletak di Kabupaten Bangli, Bali. Desa ini terkenal dengan tata ruang tradisional Bali dan masyarakatnya yang masih menjaga nilai adat serta budaya. Dikenal bersih, ramah lingkungan, dan harmonis.</p>
     </section>
+
     <section id="galeri">
-        <h2>Galeri Desa Penglipuran</h2>
-        <p>Berikut Foto keindahan desa penglipuran</p>
-        <img src="src/pp.jpg" alt="Foto Desa" class="galeri-gambar">
-        <img src="src/pp2.jpg" alt="Lanskap Desa" class="galeri-gambar2">
-        <img src="src/pp3.jpg" alt="Lanskap Desa" class="galeri-gambar2">
+      <h2>Galeri Desa</h2>
+      <div class="galeri">
+        <a href="src/pp.jpg" target="_blank">
+            <img src="src/pp.jpg" alt="Foto Penglipuran">
+        </a>
+        <a href="src/pp2.jpg" target="_blank">
+            <img src="src/pp2.jpg" alt="Foto Desa Penglipuran">
+        </a>
+        <a href="src/pp3.jpg" target="_blank">
+            <img src="src/pp3.jpg" alt="Foto Desa Penglipuran">
+        </a>
+      </div>
     </section>
-    <section id="kontak">
-        <h2>Kontak</h2>
-        <p>Nomor telepon: <a href="https://wa.me/6289519701024" target="_blank">6289519701024</a> Ini nomor Onwer</p>
-        <p>Email Owner: <a href="mailto:primanandakadek@gmail.com">primanandakadek@gmail.com</a></p>
+
+    <section class="kontak-box">
+      <h2>Kontak Kami</h2>
+      <p>📞 <a href="https://wa.me/6289519701024" target="_blank">Hubungi via WhatsApp</a></p>
+      <p>✉️ Email: <a href="mailto:primanandakadek@gmail.com">primanandakadek@gmail.com</a></p>
     </section>
-    <section id="daftar">
-        <div class="container">
-    <form class="form-box" action="/beranda" method="POST">
-      <h2>Daftar Akun</h2>
 
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required />
-
-      <label for="confirm">Konfirmasi Password</label>
-      <input type="password" id="confirm" name="confirm" required />
-
-      <button type="submit">Daftar</button>
-      <p class="login-link">Sudah punya akun? <a href="/login">Masuk</a></p>
-    </form>
-  </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 Desa Kita</p>
-    </footer>
+    <div class="button-container">
+      <a href="daftar.html" class="btn-daftar">Daftar Sekarang</a>
     </div>
-    <script>
-document.querySelector('.form-box').addEventListener('submit', function(e) {
-  const password = document.getElementById('password').value;
-  const confirm = document.getElementById('confirm').value;
+  </main>
 
-  if (password !== confirm) {
-    e.preventDefault();
-    alert('Password dan Konfirmasi Password tidak cocok!');
-  }
-});
-</script>
-
+  <footer>
+    <p>&copy; 2025 Desa Penglipuran</p>
+  </footer>
 </body>
 </html>
