@@ -197,8 +197,9 @@ button[type="submit"]:hover {
 }
 
 .sejarah-foto img{
-border-radius: 50px;
+border-radius: 70px;
 height: auto;
+width: 98%;
 }
 
 .tentang-teks {
