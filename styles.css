@@ -7,10 +7,13 @@ body {
 
 /* Header lebih compact */
 .kiko {
-  background-color: #ffe6cc;
-  padding: 8px 12px;
-  height: auto;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #f6ba74, #f7d9a0);
+  padding: 10px 20px;
+  flex-wrap: wrap;
+
 }
 
 .nav-menu {
@@ -32,21 +35,19 @@ body {
 }
 
 .koko {
-  display: flex;
+ display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .logo {
-  max-height: 60px;
-  height: auto;
+   display: flex;
+  align-items: center;
 }
 
 .site-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #ff9900;
-  text-align: left;
+  font-size: 18px;
+  color: orangered;
+
 }
 
 .site-title span {
@@ -54,17 +55,11 @@ body {
 }
 
 .menu-toggle {
-  font-size: 30px;
-  background: none;
-  border: none;
+  display: none;
+  font-size: 24px;
   cursor: pointer;
 }
 
-.oon {
-display: flex;
-align-items: center;
-gap: 20px;
-}
 
 
 /* Tampilan hero lebih clean */
@@ -233,10 +228,6 @@ transition: transform 0.3s ease-in-out;
   transform: scale(1.03);
 }
 
-.nav-menu {
-  text-align: left;
-}
-
 
 
 /* Animasi untuk input saat error */
@@ -246,16 +237,6 @@ transition: transform 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
-
-  .oon {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .nav-menu {
-    width: max-content;
-    align-items: flex-start;
-  }
   .tentang-container {
 
     flex-direction: column;
@@ -271,8 +252,26 @@ transition: transform 0.3s ease-in-out;
     flex-direction: column;
     align-items: flex-start;
   }
-
+   
+  .kiko {
+    align-items: flex-start;
+  }
   .site-title {
     font-size: 1.5rem;
   }
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
 }
