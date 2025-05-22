@@ -12,14 +12,34 @@
     <div class="koko">
         <img src="src/aa.jpg" alt="Logo" class="logo" />
         <h1 class="site-title">DESA WISATA<br><span>PENGLIPURAN</span></h1>
-        <button class="menu-toggle">&#9776;</button>
+    </div>
+    <div class="oon">
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <nav class="nav-menu" id="nav">
+      <a href="#sejarah">Sejarah</a>
+      <a href="#lokasi">Lokasi</a>
+      <a href="#galeri">Galeri</a>
+    </nav>
     </div>
   </header>
-  
+
   <main>
-    <section class="tentang">
-      <h2>Tentang Desa Penglipuran</h2>
-      <p><spen style="color: black;">Desa Penglipuran</spen> terletak di Kabupaten Bangli, Bali. Desa ini terkenal dengan tata ruang tradisional Bali dan masyarakatnya yang masih menjaga nilai adat serta budaya. Dikenal bersih, ramah lingkungan, dan harmonis.<br><spen style="color: black;">Desa adat Penglipuran</spen> terletak di Kelurahan Kubu di Kecamatan Bangli, Kabupaten Dati II Bangli. Luas desa adat Penglipuran kurang lebih 112 ha, dengan batas wilayah desa adat Kubu di sebelah timur, di sebelah selatan desa adat Gunaksa, dan di sebelah Barat Tukad Sang-sang, sedangkan di sebelah utara desa adat Kayang.Desa Adat Penglipuran terletak di kaki Gunung Batur pada ketinggian 700 meter dpl. Desa Adat Penglipuran terletak pada jalur wisata Kintamani, sejauh 5 Km dari pusat kota Bangli, dan 45 Km dari pusat kota Denpasar.</p>
+
+   <section class="tentang">
+  <h2>Desa Penglipuran</h2>
+  <div class="tentang-container">
+    <div class="tentang-teks">
+      <p><span style="color: black;">Desa Penglipuran</span> terletak di Kabupaten Bangli, Bali. Desa ini terkenal dengan tata ruang tradisional Bali dan masyarakatnya yang masih menjaga nilai adat serta budaya. Dikenal bersih, ramah lingkungan, dan harmonis.</p>
+      <p><span style="color: black;">Desa adat Penglipuran</span> terletak di Kelurahan Kubu di Kecamatan Bangli, Kabupaten Dati II Bangli. Luas desa adat Penglipuran kurang lebih 112 ha, dengan batas wilayah desa adat Kubu di sebelah timur, di sebelah selatan desa adat Gunaksa, dan di sebelah Barat Tukad Sang-sang, sedangkan di sebelah utara desa adat Kayang. Desa ini berada di kaki Gunung Batur pada ketinggian 700 meter dpl dan hanya 5 Km dari pusat kota Bangli.</p>
+    </div>
+    <div class="tentang-foto">
+      <img src="src/foto-style.jpg" alt="Foto Tentang Desa" />
+    </div>
+  </div>
+</section>
+    <section class="sejarah">
+      <h2>Sejarah Desa</h2>
+      <p>Nama Penglipuran berasal dari kata Pengeling Pura yang berarti tempat suci untuk mengenang para leluhur. Desa ini telah ada sejak ratusan tahun lalu dan masih mempertahankan pola tata ruang dan nilai adat Bali yang otentik.</p>
     </section>
 
     <section id="galeri">
@@ -31,10 +51,19 @@
       </div>
     </section>
 
+    <section class="lokasi">
+      <h2>Lokasi Desa</h2>
+      <p>Alamat: Desa Penglipuran, Kecamatan Bangli, Kabupaten Bangli, Bali</p>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126636.22395316853!2d115.26247626496184!3d-8.248349248212098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd206eb0212ec17%3A0x7db949a5b7494d01!2sDesa%20Wisata%20Penglipuran!5e0!3m2!1sid!2sid!4v1684428612203!5m2!1sid!2sid" 
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
     <section class="kontak-box">
       <h2>Kontak Kami</h2>
       <p>📞 <a href="https://wa.me/6289519701024" target="_blank">Hubungi via WhatsApp</a></p>
-      <p>✉️ Email: <a href="mailto:primanandakadek@gmail.com">primanandakadek@gmail.com</a></p>
+      <p>✉ Email: <a href="mailto:primanandakadek@gmail.com">primanandakadek@gmail.com</a></p>
     </section>
 
     <div class="button-container">
@@ -43,7 +72,16 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Desa Penglipuran</p>
+    <p>&copy; 2025 Desa Penglipuran. All rights reserved.</p>
   </footer>
+
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
