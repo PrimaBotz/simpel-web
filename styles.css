@@ -7,47 +7,27 @@ body {
 
 /* Header lebih compact */
 .kiko {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #f6ba74, #f7d9a0);
-  padding: 10px 20px;
-  flex-wrap: wrap;
-
-}
-
-.nav-menu {
-  display: none;
-  flex-direction: column;
   background-color: #ffe6cc;
-  padding: 10px;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  padding: 10px;
-  color: #333;
-  border-top: 1px solid #ccc;
-}
-
-.nav-menu.active {
-  display: flex;
+  padding: 8px 12px;
+  height: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .koko {
- display: flex;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-   display: flex;
-  align-items: center;
+  height: 80px;
 }
 
 .site-title {
-  font-size: 18px;
-  color: orangered;
-
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ff9900;
+  text-align: left;
 }
 
 .site-title span {
@@ -55,12 +35,11 @@ body {
 }
 
 .menu-toggle {
-  display: none;
-  font-size: 24px;
+  font-size: 30px;
+  background: none;
+  border: none;
   cursor: pointer;
 }
-
-
 
 /* Tampilan hero lebih clean */
 .hero {
@@ -189,7 +168,7 @@ button[type="submit"]:hover {
 
 .sejarah, .lokasi {
   background-color: #fff5e6;
-  padding: 10px;
+  padding: 18px;
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   margin-bottom: 30px;
@@ -205,30 +184,43 @@ button[type="submit"]:hover {
 .tentang-container {
   display: flex;
   gap: 20px;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.tentang-desa {
-  flex: 2;
+.sejarah {
+  gap: 20px;
+  align-items: center;
+}
+.sejarah-teks { 
   text-align: justify;
+  flex: 2;
+}
+
+.sejarah-foto img{
+border-radius: 50px;
+height: auto;
+}
+
+.tentang-teks {
+  text-align: justify;
+  flex: 2;
 }
 
 .tentang-foto {
   flex: 1;
+  margin-top: -100px;
 }
 
 .tentang-foto img {
-width: 250px;
-border-radius: 50px;
-height: auto;
-transition: transform 0.3s ease-in-out;
+ width: 250px;
+ border-radius: 50px;
+ height: auto;
+ transition: transform 0.3s ease-in-out;
 }
 
 .tentang-foto img:hover {
   transform: scale(1.03);
 }
-
-
 
 /* Animasi untuk input saat error */
 .input-error {
@@ -236,42 +228,6 @@ transition: transform 0.3s ease-in-out;
   background-color: #ffe6e6;
 }
 
-@media (max-width: 768px) {
-  .tentang-container {
-
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tentang-foto img {
-    width: 80%;
-    border-radius: 20px;
-  }
-
-  .koko {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-   
-  .kiko {
-    align-items: flex-start;
-  }
-  .site-title {
-    font-size: 1.5rem;
-  }
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
-
+@media screen {
+  
 }
