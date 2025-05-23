@@ -11,18 +11,18 @@
 
 <body>
   <header class="kiko">
-    <div class="koko">
-      <img src="src/aa.jpg" alt="Logo" class="logo" />
-      <h1 class="site-title">DESA WISATA<br><span>PENGLIPURAN</span></h1>
-      <nav class="navbar">
-        <ul>
-        <li><a href="sejarah.html">Sejarah</a></li>
-        <li><a href="lokasi.html">Lokasi</a></li>
-        <li><a href="daftar.html">Daftar</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="koko">
+    <h1 class="site-title">DESA WISATA<br><span>PENGLIPURAN</span></h1>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#sejarah">Sejarah</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="#daftar">Daftar</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <main>
 
@@ -102,13 +102,10 @@
   </footer>
 
   <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-  </script>
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    document.querySelector('.navbar').classList.toggle('active');
+  });
+</script>
 </body>
 
 </html>
