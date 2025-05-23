@@ -82,7 +82,7 @@
 
   
   .tentang-teks {
-    margin-top: 16px;
+    margin-top: 5px;
     flex: 1 1 300px;
   }
 
@@ -94,18 +94,25 @@
     border-radius: 10px;
   }
 
-  #galeri .galeri {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+ .galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
 
-  #galeri img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-  }
+
+  .galeri img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-top: 12px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.galeri img:hover {
+  transform: scale(1.03);
+}
 
   .map-container iframe {
     border-radius: 10px;
