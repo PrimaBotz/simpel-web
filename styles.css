@@ -17,6 +17,11 @@
     padding: 20px;
   }
 
+  .tentang h2 {
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
   .koko {
     display: flex;
     justify-content: space-between;
@@ -71,7 +76,13 @@
     align-items: center;
   }
 
-  .tentang-teks, .sejarah-teks {
+  .sejarah-teks {
+    flex: 1 1 300px;
+  }
+
+  
+  .tentang-teks {
+    margin-top: 16px;
     flex: 1 1 300px;
   }
 
