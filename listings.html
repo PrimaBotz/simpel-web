@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Your Dream Home</title>
+    <title>Property Listings</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,33 +24,44 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Find Your Dream Home</h2>
-            <a href="listings.html" class="cta-button">Browse Listings</a>
-        </div>
+    <section class="filter-bar">
+        <h2>Filter Properties</h2>
+        <form id="filter-form">
+            <input type="text" placeholder="Location">
+            <input type="number" placeholder="Max Price">
+            <select>
+                <option value="">Property Type</option>
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="villa">Villa</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
     </section>
 
-    <section class="featured-properties">
-        <h2>Featured Properties</h2>
+    <section class="property-listings">
+        <h2>Available Properties</h2>
         <div class="property-cards">
             <div class="property-card">
                 <img src="https://images.unsplash.com/photo-1560185127-6c8c8c8c8c8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400" alt="Property Image">
                 <h3>Luxury Villa</h3>
                 <p>$1,200,000</p>
-                <p><strong>Location:</strong> Beachside</p>
+                <p>Beautiful villa with ocean views.</p>
+                <a href="#" class="details-button">View Details</a>
             </div>
             <div class="property-card">
                 <img src="https://images.unsplash.com/photo-1560185127-6c8c8c8c8c8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400" alt="Property Image">
                 <h3>Modern Apartment</h3>
                 <p>$750,000</p>
-                <p><strong>Location:</strong> Downtown</p>
+                <p>Stylish apartment in the city center.</p>
+                <a href="#" class="details-button">View Details</a>
             </div>
             <div class="property-card">
                 <img src="https://images.unsplash.com/photo-1560185127-6c8c8c8c8c8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400" alt="Property Image">
                 <h3>Cozy Cottage</h3>
                 <p>$500,000</p>
-                <p><strong>Location:</strong> Countryside</p>
+                <p>Charming cottage in a quiet neighborhood.</p>
+                <a href="#" class="details-button">View Details</a>
             </div>
         </div>
     </section>
